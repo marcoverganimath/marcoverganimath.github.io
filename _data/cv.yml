@@ -4,9 +4,9 @@
     - name: Full Name
       value: Marco Vergani
     - name: Date of Birth
-      value: 8th February 1995
+      value: 14th March 1879
     - name: Languages
-      value: Italian, English, Spanish
+      value: English, German
 
 - title: Education
   type: time_table
