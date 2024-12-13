@@ -26,10 +26,12 @@
     {
       "name": "Università degli studi di Firenze, Firenze",
       "position": "Ph.D. Student",
-      "url": "",
+      "url": "https://www.unifi.it/",
       "startDate": "2021-01-10",
       "endDate": "2024-31-10",
-      "summary": "",
+      "Thesis title": "Rationality of finite groups",
+      "Relator": "Emanuele Pacifici",
+      "Discussion" : "TBA",
       "highlights": ["Finite group theory", "Representation theory of finite groups"]
     }
   ],
@@ -62,6 +64,8 @@
       "studyType": "Master Degree",
       "startDate": "2018-01-10",
       "endDate": "2021-14-06",
+      "Thesis title" : "Algebre di gruppo razionali e figure su polìtopi orbitali",
+      "Relator": "Mariagrazia Bianchi",
       "score": "110 cum Laude",
       "courses": [""]
     }
@@ -98,12 +102,12 @@
   "references": [
     {
       "name": "Professor Emanuele Pacifici",
-      "icon": "fa-solid fa-laptop",
+      "icon": "fa-solid fa-user",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
       "name": "Professor Angel del Rio",
-      "icon": "fa-solid fa-thumbtack",
+      "icon": "fa-solid fa-user",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ]
