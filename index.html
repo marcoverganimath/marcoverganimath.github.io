@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito Interattivo</title>
     <style>
+        body { /* Oppure un div che contiene il paragrafo */
+            text-align: center; /* Centra il testo orizzontalmente */
+            }
+
+            p {
+            font-size: 2em; /* Rende il testo più grande (2 volte la dimensione predefinita) */
+            }
         #mannyImage {
             cursor: pointer; /* Cambia il cursore in una mano per indicare che è cliccabile */
             max-width: 500px; /* Imposta una larghezza massima per l'immagine */
             display: block; /* Evita spazi indesiderati sotto l'immagine */
             margin: 20px auto; /* Centra l'immagine */
+            cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZGQEAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/LCwsDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcHBwIAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwcHAgAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8LCwsNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBwcCAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/xwcHAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wUFBQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/oo/9/6KP/f+ij/3/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/6KP/f+ij/3/oo/9/6KP/f+ij/3/opD9/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/o5H9/6OR/f8AAAD/oo/9/6KP/f+ij/3/oo/9/6KP/f+ikP3/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/6KP/f+ij/3/oo/9/wAAAP+ij/3/oo/9/6KP/f+ij/3/oo/9/6KQ/f8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/6KP/f8AAAD/AAAA/6KP/f+ij/3/oo/9/6KP/f+ij/3/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/6KP/f+ij/3/oo/9/wAAAP+ij/3/o5H9/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/oo/9/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/6KP/f+ij/3/oo/9/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/6KP/f+ij/3/oo/9/wAAAP8AAAD/oo/9/wAAAP8AAAD/oo/9/6OR/f8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/6KP/f+ij/3/AAAA/6KP/f+ij/3/oo/9/wAAAP8AAAD/o5H9/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/oo/9/wAAAP8AAAD/oo/9/6KP/f+ij/3/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/oo/9/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////4B///4AH//8AB///AAf//gAH//4AD//+AA///AAP//wAH//8AB//+AAf//gAP//wAD//4AB//8AAf/+AAH//AAD//gAA//4AAP/+AAH//gAB//8AAf//AAP//wAD//+AB///gA///8Af///gf////////////8='), auto;
         }
 
         #parolaNascosta {
@@ -17,13 +25,31 @@
             color: blue; /* Cambia il colore del testo */
             text-align: center; /* Centra il testo */
             margin-top: 10px;
+            transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Aggiunge una transizione fluida */
         }
+        
+
+        #parolaNascosta.blurred {
+            filter: blur(10px); /* Applica la sfocatura */
+            opacity: 0.5;       /* Rende la parola leggermente trasparente */
+            cursor: default;     /* Cambia il cursore per indicare che non è cliccabile */
+
+        }
+        #parolaNascostaContainer { /* Contenitore per la parola e lo spazio */
+            display: inline-block; /* Importante per mantenere lo spazio */
+            min-width: 50px; /* Larghezza minima per lo spazio */
+            text-align: center; /* Allineamento del testo al centro*/
+        }
+
     </style>
 </head>
 <body>
+    <p>Parola nascosta: <span id="parolaNascostaContainer"><span id="parolaNascosta" style="display: none;">ETEREO</span></span></p>
+    
     <img id="mannyImage" src="Manny.jpg" alt="Manny">
-    <span id="parolaNascosta" style="display: none;">Parola Segreta</span>
+    
     <script>
+            var suonoCasuale = new Audio("sounds/happy.mp3")
             document.getElementById('mannyImage').addEventListener('click', function(event) {
             // Ottieni le coordinate del click rispetto all'immagine
             const x = event.offsetX;
@@ -45,37 +71,42 @@
                 "sounds/argue.mp3",
             ];
 
-            let suonoInRiproduzione = null; 
+            
+            //let suonoCasuale = new Audio("sounds/happy.mp3");
 
-            // Verifica se il click è all'interno della zona
+            // Verifica se il click è all'interno della zon
+
             if (x >= zonaClicXInizio && x <= zonaClicXFine && y >= zonaClicYInizio && y <= zonaClicYFine) {
                 // Mostra la parola
-                document.getElementById('parolaNascosta').style.display = 'block';
+                if (parolaNascosta.style.display === 'none') {
+                    parolaNascosta.style.display = 'block';
+                    parolaNascosta.classList.remove('blurred'); // Rimuove la sfocatura
+                }
+                if (suonoCasuale != null){
+                    suonoCasuale.pause();
+                    suonoCasuale.currentTime = 0;
+                }
+                suonoCasuale.pause()
+                suonoCasuale.src= "sounds/happy.mp3"
+                suonoCasuale.play()
                 console.log("PAROLA MOSTRATA")
             } else {
                 // Opzionale: puoi aggiungere un'azione per click fuori zona, ad esempio un alert
                 //alert("Hai cliccato fuori dalla zona!");
                 console.log("Click fuori zona a X: " + x + ", Y: " + y);
                 // Nascondi la parola SE è visibile
-                if (document.getElementById('parolaNascosta').style.display === 'block') {
-                    document.getElementById('parolaNascosta').style.display = 'none';
+                if (parolaNascosta.style.display === 'block') {
+                    parolaNascosta.style.display = 'none';
+                    parolaNascosta.classList.add('blurred');    // Aggiunge la sfocatura
                 }
                 // Riproduci un suono casuale
-                if (suonoInRiproduzione) {
-                    suonoInRiproduzione.pause();        // Mette in pausa il suono
-                    suonoInRiproduzione.currentTime = 0; // Reimposta il tempo di riproduzione all'inizio
-                    suonoInRiproduzione = null;       // Resetta la variabile
-                }
-
+                suonoCasuale.pause();
                 // Riproduci un nuovo suono casuale
                 const indiceCasuale = Math.floor(Math.random() * suoni.length);
-                const suonoCasuale = new Audio(suoni[indiceCasuale]);
+                suonoCasuale.src= suoni[indiceCasuale];
 
-                suonoCasuale.addEventListener('ended', () => {
-                suonoInRiproduzione = null;
-                })
                 suonoCasuale.play();
-                suonoInRiproduzione = suonoCasuale;
+                
             }
         });
 
