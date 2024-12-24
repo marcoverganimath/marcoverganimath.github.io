@@ -45,6 +45,12 @@
             } else {
                 // Opzionale: puoi aggiungere un'azione per click fuori zona, ad esempio un alert
                 //alert("Hai cliccato fuori dalla zona!");
+                console.log("Click fuori zona a X: " + x + ", Y: " + y);
+                // Nascondi la parola SE è visibile
+                if (document.getElementById('parolaNascosta').style.display === 'block') {
+                    document.getElementById('parolaNascosta').style.display = 'none';
+                }
+
             }
         });
 
