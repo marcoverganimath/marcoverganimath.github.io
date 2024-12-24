@@ -45,6 +45,8 @@
                 "sounds/argue.mp3",
             ];
 
+            let suonoInRiproduzione = null; 
+
             // Verifica se il click è all'interno della zona
             if (x >= zonaClicXInizio && x <= zonaClicXFine && y >= zonaClicYInizio && y <= zonaClicYFine) {
                 // Mostra la parola
@@ -59,10 +61,21 @@
                     document.getElementById('parolaNascosta').style.display = 'none';
                 }
                 // Riproduci un suono casuale
+                if (suonoInRiproduzione) {
+                    suonoInRiproduzione.pause();        // Mette in pausa il suono
+                    suonoInRiproduzione.currentTime = 0; // Reimposta il tempo di riproduzione all'inizio
+                    suonoInRiproduzione = null;       // Resetta la variabile
+                }
+
+                // Riproduci un nuovo suono casuale
                 const indiceCasuale = Math.floor(Math.random() * suoni.length);
                 const suonoCasuale = new Audio(suoni[indiceCasuale]);
-                suonoCasuale.play();
 
+                suonoCasuale.addEventListener('ended', () => {
+                suonoInRiproduzione = null;
+                })
+                suonoCasuale.play();
+                suonoInRiproduzione = suonoCasuale;
             }
         });
 
