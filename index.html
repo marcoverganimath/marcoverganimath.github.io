@@ -23,7 +23,6 @@
 <body>
     <img id="mannyImage" src="Manny.jpg" alt="Manny">
     <span id="parolaNascosta" style="display: none;">Parola Segreta</span>
-    <iframe width="110" height="200" src="https://www.myinstants.com/instant/huh-cat-meme-88154/embed/" frameborder="0" scrolling="no"></iframe>
     <script>
             document.getElementById('mannyImage').addEventListener('click', function(event) {
             // Ottieni le coordinate del click rispetto all'immagine
@@ -38,6 +37,13 @@
             const zonaClicYInizio = 303; // Coordinata Y inizio zona
             const zonaClicYFine = 354;   // Coordinata Y fine zona
 
+            const suoni = [
+                "https://www.myinstants.com/instant/meme-cat-93739/embed/", // Inserisci qui il primo link
+                //"LINK_AL_SUONO_2", // Inserisci qui il secondo link
+                //"LINK_AL_SUONO_3", // Inserisci qui il terzo link
+                // Aggiungi altri link qui
+            ];
+
             // Verifica se il click è all'interno della zona
             if (x >= zonaClicXInizio && x <= zonaClicXFine && y >= zonaClicYInizio && y <= zonaClicYFine) {
                 // Mostra la parola
@@ -51,6 +57,10 @@
                 if (document.getElementById('parolaNascosta').style.display === 'block') {
                     document.getElementById('parolaNascosta').style.display = 'none';
                 }
+                // Riproduci un suono casuale
+                const indiceCasuale = Math.floor(Math.random() * suoni.length);
+                const suonoCasuale = new Audio(suoni[indiceCasuale]);
+                suonoCasuale.play();
 
             }
         });
