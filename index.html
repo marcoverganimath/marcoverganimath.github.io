@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Interattivo</title>
+    <style>
+        #mannyImage {
+            cursor: pointer; /* Cambia il cursore in una mano per indicare che è cliccabile */
+            max-width: 500px; /* Imposta una larghezza massima per l'immagine */
+            display: block; /* Evita spazi indesiderati sotto l'immagine */
+            margin: 20px auto; /* Centra l'immagine */
+        }
+
+        #parolaNascosta {
+            font-size: 2em; /* Aumenta la dimensione del testo */
+            color: blue; /* Cambia il colore del testo */
+            text-align: center; /* Centra il testo */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img id="mannyImage" src="Manny.png" alt="Manny">
+    <span id="parolaNascosta" style="display: none;">Parola Segreta</span>
+    <script>
+            document.getElementById('mannyImage').addEventListener('click', function(event) {
+            // Ottieni le coordinate del click rispetto all'immagine
+            const x = event.offsetX;
+            const y = event.offsetY;
+
+            // Definisci la zona "cliccabile" (esempio: un rettangolo)
+            const zonaClicXInizio = 50; // Coordinata X inizio zona
+            const zonaClicXFine = 150;   // Coordinata X fine zona
+            const zonaClicYInizio = 70; // Coordinata Y inizio zona
+            const zonaClicYFine = 120;   // Coordinata Y fine zona
+
+            // Verifica se il click è all'interno della zona
+            if (x >= zonaClicXInizio && x <= zonaClicXFine && y >= zonaClicYInizio && y <= zonaClicYFine) {
+                // Mostra la parola
+                document.getElementById('parolaNascosta').style.display = 'block';
+            } else {
+                // Opzionale: puoi aggiungere un'azione per click fuori zona, ad esempio un alert
+                //alert("Hai cliccato fuori dalla zona!");
+            }
+        });
+
+    </script>
+</body>
+</html>
